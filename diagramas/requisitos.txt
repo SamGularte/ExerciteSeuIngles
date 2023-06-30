@@ -1,0 +1,16 @@
+
+
+1 - Auxiliar nos estudos da lingua inglesa através da prática
+2 - gerar frases em ingles para que o usuario possa exercitar sua leitura, escrita e escuta da lingua Inglesa.
+3 - disponibilizar um dicionario da lingua inglesa caso o usuario não conheça alguma palavra ou expressão. 
+    obs(o mesmo deve ser completamente em ingles, pois o objetivo é exercitar o mesmo).
+4 - um tradutor para auxiliar o usuario nesse processo.
+5 - e um dicionario em portugues para caso o usuario não conheça alguma palavra que encontrou na tradução.
+
+
+*********************************************************************************************************************
+
+1 - o sistema deve ser simples e de fácil entendimento
+2 - o sistema deve fornecer respostas rapidas e ser interativo.
+3 - o sistema deve manter todas as informações na tela seja a frase gerada, a tradução gerada ou a busca feita.
+4 - deve ser responsiva para funcionar tanto no desktop quanto no mobile.

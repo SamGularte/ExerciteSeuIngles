@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Placeholder</title>
+</head>
+<body>
+  <div class="container_f">
+    <div class="container">
+      <h1>Exercite seu Inglês</h1>
+      <div class="content">
+        <div class="quote-area">
+          <i class="fas fa-quote-left"></i>
+          <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates illum vitae similique a, ut iusto vero eius provident, enim dolorem culpa excepturi optio cumque sed itaque nam, at earum.</p>
+          <i class="fas fa-quote-right"></i>
+        </div>
+        <div class="author">
+          <span>__</span>
+          <span class="name"> Mary kay Ash</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="features">
+          <ul>
+            <li class="sound"><i class="fas fa-volume-up"></i></li>
+            <li class="copy"><i class="fas fa-copy"></i></li>
+          </ul>
+          <button>Nova frase</button>
+        </div>
+      </div>
+      <hr/>
+      <h2>Dicionário de Inglês</h2>
+      <div class="search-box">
+        <input type="text" placeholder="type the word here..." id="inp-word"/>
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="result" id="result"></div>
+      <hr/>
+      <h2>Dicionário de Português</h2>
+      <div class="search-box">
+        <input type="text" placeholder="Digite a palavra aqui..." id="inp-word_p"/>
+        <button id="search-btn_p">Procurar</button>
+    </div>
+    <div class="result" id="result_p"></div>
+    </div>
+  </div>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/D_ingles.js"></script>
+  <script src="./scripts/D_portugues.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #80d3bb;
+}
+
+.container_f{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: #ffffff;
+    width: 90vmin;
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+    margin-top: 3rem;
+}
+
+.container h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.container hr{
+    margin-top: 3rem;
+    border-width: 3px;
+}
+
+.container .content{
+    margin: 2.5rem 0;
+}
+
+.content .quote-area{
+    display: flex;
+    justify-content: center;
+}
+
+.quote-area i{
+    font-size: 1rem;
+}
+
+.quote-area i:first-child{
+    margin: 0.2rem 0.8rem 0 0;
+}
+
+.quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 0.2rem 0.8rem;
+}
+
+.quote-area .quote{
+    font-size: 1.5rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.content .author{
+    display: flex;
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 1.2rem;
+    justify-content: flex-end;
+}
+
+.author span:first-child{
+    margin: -0.5rem 0.5rem 0 0;
+    font-family: monospace;
+}
+
+.container .buttons{
+    border-top: 1ps solid #ccc;
+}
+
+.buttons .features{
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+    justify-content: space-between;
+}
+
+.features ul{
+    display: flex;
+}
+
+.features ul li{
+    list-style: none;
+    margin: 0 0.5px;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #80d3bb;
+    color: #80d3bb;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.features ul li:hover{
+    color:#ffffff;
+    background: #80d3bb;
+}
+
+.features button{
+    border: none;
+    outline: none;
+    background-color: #80d3bb;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.search-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input{
+    padding: 0.5rem;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #80d3bb;
+    font-size: 1rem;
+}
+
+.search-box button{
+    padding: 0.5rem 0;
+    width: 25%;
+    background-color: #80d3bb;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result{
+    position: relative;
+}
+
+.result h3{
+    font-size: 2rem;
+    color: #1f194c;
+}
+
+.result .word{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 3.7rem;
+}
+
+.result button{
+    background-color: transparent;
+    color: #80d3bb;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.result .details{
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 0.5rem 0 1.5rem 0;
+    font-size: 1rem;
+}
+
+.result hr{
+    border-color: #80d3bb;
+}
+
+.word-meaning{
+    color: #575a7b;
+}
+
+.word-example{
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #80d3bb;
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+}
+
+.error{
+    margin-top: 3.7rem;
+    text-align: center;
+}
