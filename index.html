@@ -32,6 +32,31 @@
         </div>
       </div>
       <hr/>
+      <div class="wraper">
+        <div class="text-input">
+            <textarea class="from-text" placeholder="Enter Text..."></textarea>
+            <textarea class="to-text" placeholder="Translation" readonly disabled></textarea>
+        </div>
+        <ul class="control">
+            <li class="row from">
+                <div class="icons">
+                    <i id="from" class="fas fa-volume-up"></i>
+                    <i id="from" class="fas fa-copy"></i>
+                </div>
+                <select></select>
+            </li>
+            <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+            <li class="row to">
+                <select></select>
+                <div class="icons">
+                    <i id="to" class="fas fa-volume-up"></i>
+                    <i id="to" class="fas fa-copy"></i>
+                </div>
+            </li>
+        </ul>
+      </div>
+      <button id="tranlate-btn">Translate text</button>
+      <hr/>
       <h2>Dicionário de Inglês</h2>
       <div class="search-box">
         <input type="text" placeholder="type the word here..." id="inp-word"/>
@@ -50,5 +75,7 @@
   <script src="./scripts/index.js"></script>
   <script src="./scripts/D_ingles.js"></script>
   <script src="./scripts/D_portugues.js"></script>
+  <script src="./scripts/countries.js"></script>
+  <script src="./scripts/translator.js"></script>
 </body>
 </html>

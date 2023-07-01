@@ -20,7 +20,7 @@ body{
     padding: 2.5rem 2rem;
     border-radius: 10px;
     box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 
 .container h1{
