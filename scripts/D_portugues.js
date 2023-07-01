@@ -4,6 +4,8 @@ const result2 = document.getElementById("result_p");
 const btn2 = document.getElementById("search-btn_p");
 
 btn2.addEventListener("click", () => {
+    btn2.classList.add("loading");
+    btn2.innerText = "carregando definição...";
     let inpWord2 = document.getElementById("inp-word_p").value;
     fetch(`${url2}${inpWord2}`).then((response2) => response2.json()).then((data2) => {
         console.log(data2);
@@ -18,7 +20,11 @@ btn2.addEventListener("click", () => {
                 <h3>${inpWord2}</h3>
             </div>
             <p class="word-meaning">${parsedElement.getElementsByTagName("sense")[0].getElementsByTagName("def")[0].textContent}</p>`;
+        btn2.innerText = "Procurar";
+        btn2.classList.remove("loading");
     }).catch( () => {
         result2.innerHTML = `<h3 class="error">Palavra não encontrada</h3>`;
+        btn2.innerText = "Procurar";
+        btn2.classList.remove("loading");
     })
 });

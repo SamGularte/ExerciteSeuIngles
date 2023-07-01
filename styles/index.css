@@ -211,3 +211,69 @@ button.loading{
     margin-top: 3.7rem;
     text-align: center;
 }
+
+.wraper{
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.wraper .text-input{
+    display: flex;
+}
+
+.text-input textarea{
+    height: 15rem;
+    width: 100%;
+    border: 3px solid #80d3bb;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: none;
+    padding: 1rem;
+    resize: none;
+}
+
+.control, li, .icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.control{
+    list-style: none;
+    padding: 1rem .7rem;
+}
+
+.control .icons i{
+    font-size: 1rem;
+    color: #80d3bb;
+    cursor: pointer;
+}
+
+.control .row select{
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.control .exchange{
+    color: #80d3bb;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#tranlate-btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #80d3bb;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+}

@@ -31,15 +31,19 @@ const icons = document.querySelectorAll(".row i");
     });
 
     traslateBtn.addEventListener("click", () =>{
+        traslateBtn.classList.add("loading");
+        traslateBtn.innerText = "Translating..";
         let text = fromText.value; 
-        trasnlateFrom = selectTag[0].value;
-        trasnlateTo = selectTag[1].value;
+        let trasnlateFrom = selectTag[0].value;
+        let trasnlateTo = selectTag[1].value;
         console.log(text, trasnlateFrom, trasnlateTo);
         let apiUrl = `https://api.mymemory.translated.net/get?q=${text}!&langpair=${trasnlateFrom}|${trasnlateTo}`;
 
         fetch(apiUrl).then(response => response.json()).then(data => {
             console.log(data);
             toText.value = data.responseData.translatedText;
+            traslateBtn.innerText = "Translate text";
+            traslateBtn.classList.remove("loading");
         });
     });
 
