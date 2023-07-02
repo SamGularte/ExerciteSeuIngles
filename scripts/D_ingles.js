@@ -5,7 +5,7 @@ const btn = document.getElementById("search-btn");
 const sound = document.getElementById("sound-E");
 
 btn.addEventListener("click", () => {
-    btn.classList.add("Procurando");
+    btn.classList.add("Procurando...");
     btn.innerText = "loading definition";
     let inpWord = document.getElementById("inp-word").value;
     fetch(`${url}${inpWord}`).then((response) => response.json()).then((data) => {
