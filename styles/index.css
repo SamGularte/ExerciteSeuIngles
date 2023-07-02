@@ -300,4 +300,68 @@ button.loading{
 
 @media (max-width: 768px) {
 
+    .container h1{
+        font-size: 1.5rem;
+    }
+    
+    .container h2{
+        font-size: 1.2rem;
+        margin: 1rem 0 3rem 0;
+    }
+
+    .quote-area i{
+        font-size: 0.5rem;
+    }
+    
+    .quote-area .quote{
+        font-size: 1rem;
+    }
+
+    .content .author{
+        font-size: 0.8rem;
+    }
+
+    .features ul li{
+        font-size: 0.8rem;
+    }
+
+    .features button .inner-element{
+        font-size: 0.8rem;
+    }
+    
+    .search-box input{
+        font-size: 0.8rem;
+    }
+
+    .search-box input::placeholder{
+        font-size: 0.8rem;
+    }
+    
+    .search-box button .inner-element{
+        font-size: 0.8rem;
+    }
+
+    #tranlate-btn .inner-element{
+        font-size: 0.8rem;
+    }
+
+    .result h3{
+        font-size: 1.2rem;
+    }
+
+    .result .details{
+        font-size: 0.8rem;
+    }
+
+    .word-meaning{
+        font-size: 0.8rem;
+    }
+    
+    .word-example{
+        font-size: 0.8rem;
+    }
+
+    #answer h4{
+        font-size: 1.2rem;
+    }
 }

@@ -5,7 +5,7 @@ const btn = document.getElementById("search-btn");
 const sound = document.getElementById("sound-E");
 
 btn.addEventListener("click", () => {
-    btn.classList.add("loading");
+    btn.classList.add("Procurando");
     btn.innerText = "loading definition";
     let inpWord = document.getElementById("inp-word").value;
     fetch(`${url}${inpWord}`).then((response) => response.json()).then((data) => {
@@ -71,7 +71,7 @@ btn.addEventListener("click", () => {
             <p class="word-meaning">${data[0].meanings[2].definitions[0].definition}</p>
             <p class="word-example">${data[0].meanings[2].definitions[0].example || ""}</p>`;
         }
-        btn.innerText = "Search";
+        btn.innerText = "Procurar";
         btn.classList.remove("loading");
     }).catch( () => {
         result.innerHTML = `<h3 class="error">Couldn't find the word</h3>`;

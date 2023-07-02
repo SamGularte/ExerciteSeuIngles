@@ -31,7 +31,7 @@ const icons = document.querySelectorAll(".row i");
 
     traslateBtn.addEventListener("click", () =>{
         traslateBtn.classList.add("loading");
-        traslateBtn.innerText = "Translating..";
+        traslateBtn.innerText = "Traduzindo...";
         let text = fromText.value; 
         let trasnlateFrom = selectTag[0].value;
         let trasnlateTo = selectTag[1].value;
@@ -41,7 +41,7 @@ const icons = document.querySelectorAll(".row i");
         fetch(apiUrl).then(response => response.json()).then(data => {
             console.log(data);
             toText.value = data.responseData.translatedText;
-            traslateBtn.innerText = "Translate text";
+            traslateBtn.innerText = "Traduzir texto";
             traslateBtn.classList.remove("loading");
         });
     });

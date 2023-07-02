@@ -4,7 +4,7 @@ const results = document.getElementById("answer");
 btn_correction.addEventListener("click", () => {
 
     btn_correction.classList.add("loading");
-    btn_correction.innerText = "calculating";
+    btn_correction.innerText = "calculando";
 
     let inpSentence = document.getElementById("inp-sentence").value;
     let helper = document.getElementById("quote");
@@ -63,7 +63,7 @@ btn_correction.addEventListener("click", () => {
         <br>
         <p class="word-meaning">${seconddisplayText}</p>
         <p class="word-example">${translatedText}</p>`;
-        btn_correction.innerText = "Calculate";
+        btn_correction.innerText = "Calcular";
         btn_correction.classList.remove("loading");
     });
 });

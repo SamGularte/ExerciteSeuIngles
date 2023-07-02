@@ -5,7 +5,7 @@ const btn2 = document.getElementById("search-btn_p");
 
 btn2.addEventListener("click", () => {
     btn2.classList.add("loading");
-    btn2.innerText = "carregando definição...";
+    btn2.innerText = "Procurando...";
     let inpWord2 = document.getElementById("inp-word_p").value;
     fetch(`${url2}${inpWord2}`).then((response2) => response2.json()).then((data2) => {
         console.log(data2);
