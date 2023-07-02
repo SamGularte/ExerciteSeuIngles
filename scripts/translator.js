@@ -14,7 +14,6 @@ const icons = document.querySelectorAll(".row i");
             else if(id == 1 && country_code == "pt-BR"){
                 selected = "selected";
             }
-            console.log(country_code)
             let option = `<option value="${country_code}" ${selected}>${countries[country_code]}</option>`;
             tag.insertAdjacentHTML("beforeend", option);
         }

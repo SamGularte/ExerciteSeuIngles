@@ -14,7 +14,7 @@
       <div class="content">
         <div class="quote-area">
           <i class="fas fa-quote-left"></i>
-          <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates illum vitae similique a, ut iusto vero eius provident, enim dolorem culpa excepturi optio cumque sed itaque nam, at earum.</p>
+          <p id="quote" class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates illum vitae similique a, ut iusto vero eius provident, enim dolorem culpa excepturi optio cumque sed itaque nam, at earum.</p>
           <i class="fas fa-quote-right"></i>
         </div>
         <div class="author">
@@ -31,6 +31,13 @@
           <button>Nova frase</button>
         </div>
       </div>
+      <hr/>
+      <h2>Try to translate the sentence</h2>
+      <div class="search-box">
+        <input type="text" placeholder="type your translation here..." id="inp-sentence"/>
+        <button id="your-translation-btn">Calculate</button>
+      </div>
+      <div id="answer"></div>
       <hr/>
       <div class="wraper">
         <h2>Translator</h2>
@@ -78,5 +85,6 @@
   <script src="./scripts/D_portugues.js"></script>
   <script src="./scripts/countries.js"></script>
   <script src="./scripts/translator.js"></script>
+  <script src="./scripts/correcting.js"></script>
 </body>
 </html>
